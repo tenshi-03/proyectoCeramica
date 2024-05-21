@@ -1,9 +1,9 @@
 package Model;
 
-public class material {
+public class Material {
     private double fe, si, al, mg, na, k, ti, ca, ppc;
 
-    public material(double fe, double si, double al, double mg, double na, double k, double ti, double ca, double ppc) {
+    public Material(double fe, double si, double al, double mg, double na, double k, double ti, double ca, double ppc) {
         this.fe = fe;
         this.si = si;
         this.al = al;

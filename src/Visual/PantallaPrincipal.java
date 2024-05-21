@@ -56,12 +56,19 @@ public class PantallaPrincipal extends JFrame {
 
 
         panelIzqInf.add(b_comprobar);
-        panelDer.add(ta_resultados = new JTextArea("Resultados:"));
+
+        ta_resultados = new JTextArea("Resultados:");
+
+        //ta_resultados.setFont(Fo);
+        ta_resultados.setEditable(false);
+        panelDer.add(ta_resultados);
 
         panelIzq.add(panelIzqSup);
         panelIzq.add(panelIzqInf);
         add(panelIzq);
         add(panelDer);
+
+       // b_comprobar.addActionListener(e -> );
 
 
 
@@ -73,5 +80,6 @@ public class PantallaPrincipal extends JFrame {
     public static void main(String[] args) {
         PantallaPrincipal miPantalla=new PantallaPrincipal();
         miPantalla.setVisible(true);
+
     }
 }

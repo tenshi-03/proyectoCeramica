@@ -2,8 +2,10 @@ package Visual;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class PantallaPrincipal extends JFrame {
+public class PantallaPrincipal extends JFrame implements ActionListener {
 
     JLabel l_Fe, l_Si, l_Al, l_Mg, l_Na, l_K, l_Ti, l_Ca, l_PPC;
     JTextField tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC;
@@ -68,18 +70,17 @@ public class PantallaPrincipal extends JFrame {
         add(panelIzq);
         add(panelDer);
 
-       // b_comprobar.addActionListener(e -> );
-
-
-
-
-
-
+        b_comprobar.addActionListener(this);
 
     }
     public static void main(String[] args) {
         PantallaPrincipal miPantalla=new PantallaPrincipal();
         miPantalla.setVisible(true);
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent actionEvent) {
 
     }
 }

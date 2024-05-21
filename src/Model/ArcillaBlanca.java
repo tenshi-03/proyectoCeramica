@@ -18,67 +18,67 @@ public class ArcillaBlanca {
     private static Double maxPPC = 12.0;
     private static Double minPPC = 3.5;
 
-    public static Double getMaxFe() {
+    public Double getMaxFe() {
         return maxFe;
     }
 
-    public static Double getMinFe() {
+    public Double getMinFe() {
         return minFe;
     }
 
-    public static Double getMaxSi() {
+    public Double getMaxSi() {
         return maxSi;
     }
 
-    public static Double getMinSi() {
+    public Double getMinSi() {
         return minSi;
     }
 
-    public static Double getMaxAl() {
+    public Double getMaxAl() {
         return maxAl;
     }
 
-    public static Double getMinAl() {
+    public Double getMinAl() {
         return minAl;
     }
 
-    public static Double getMaxMg() {
+    public Double getMaxMg() {
         return maxMg;
     }
 
-    public static Double getMaxNa() {
+    public Double getMaxNa() {
         return maxNa;
     }
 
-    public static Double getMinNa() {
+    public Double getMinNa() {
         return minNa;
     }
 
-    public static Double getMaxK() {
+    public Double getMaxK() {
         return maxK;
     }
 
-    public static Double getMinK() {
+    public Double getMinK() {
         return minK;
     }
 
-    public static Double getMaxTi() {
+    public Double getMaxTi() {
         return maxTi;
     }
 
-    public static Double getMinTi() {
+    public Double getMinTi() {
         return minTi;
     }
 
-    public static Double getMaxCa() {
+    public Double getMaxCa() {
         return maxCa;
     }
 
-    public static Double getMaxPPC() {
+    public Double getMaxPPC() {
         return maxPPC;
     }
 
-    public static Double getMinPPC() {
+    public Double getMinPPC() {
         return minPPC;
     }
 }

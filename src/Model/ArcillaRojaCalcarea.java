@@ -6,18 +6,18 @@ public class ArcillaRojaCalcarea extends ArcillaRoja{
     private static Double maxPPC = 23.0;
     private static Double minPPC = 15.0;
 
-    public static Double getMaxCa() {
+    public Double getMaxCa() {
         return maxCa;
     }
 
-    public static Double getMinCa() {
+    public Double getMinCa() {
         return minCa;
     }
 
-    public static Double getMaxPPC() {
+    public Double getMaxPPC() {
         return maxPPC;
     }
-    public static Double getMinPPC(){
+    public Double getMinPPC(){
         return minPPC;
     }
 }

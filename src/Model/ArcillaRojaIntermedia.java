@@ -6,18 +6,18 @@ public class ArcillaRojaIntermedia extends ArcillaRoja{
     private static Double maxPPC = 10.0;
     private static Double minPPC = 7.0;
 
-    public static Double getMaxCa() {
+    public Double getMaxCa() {
         return maxCa;
     }
 
-    public static Double getMinCa() {
+    public Double getMinCa() {
         return minCa;
     }
 
-    public static Double getMaxPPC() {
+    public Double getMaxPPC() {
         return maxPPC;
     }
-    public static Double getMinPPC(){
+    public Double getMinPPC(){
         return minPPC;
     }
 }

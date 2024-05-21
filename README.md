@@ -1,4 +1,4 @@
-# proyectoCeramica
+# Proyecto Cerámica
 Proyecto Cerámica Programacion DAM
 
 Arcilla roja no calcárea:

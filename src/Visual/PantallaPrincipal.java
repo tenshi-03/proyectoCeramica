@@ -13,7 +13,7 @@ public class PantallaPrincipal extends JFrame {
 
     public PantallaPrincipal(){
         setLayout(new GridLayout(1,2));
-        setVisible(true);
+
         setTitle("Proyecto cerámica");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Toolkit mipantalla= Toolkit.getDefaultToolkit();
@@ -72,5 +72,6 @@ public class PantallaPrincipal extends JFrame {
     }
     public static void main(String[] args) {
         PantallaPrincipal miPantalla=new PantallaPrincipal();
+        miPantalla.setVisible(true);
     }
 }

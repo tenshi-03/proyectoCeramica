@@ -12,10 +12,11 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
     JButton b_comprobar;
     JTextArea ta_resultados;
     JPanel panelIzq, panelIzqSup, panelIzqInf, panelDer;
+    private Color colorFondo = new Color(31,29,59);
 
     public PantallaPrincipal(){
         setLayout(new GridLayout(1,2));
-
+        setBackground(colorFondo);
         setTitle("Proyecto cerámica");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Toolkit mipantalla= Toolkit.getDefaultToolkit();
@@ -24,9 +25,13 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
         this.setLocation(dimension.width/4, dimension.height/4);
 
         panelIzq = new JPanel();
+        panelIzq.setBackground(colorFondo);
         panelIzqSup = new JPanel();
+        panelIzqSup.setBackground(colorFondo);
         panelIzqInf = new JPanel();
+        panelIzqInf.setBackground(colorFondo);
         panelDer= new JPanel();
+        panelDer.setBackground(colorFondo);
 
         panelIzq.setLayout(new GridLayout(2,1));
         panelIzqSup.setLayout(new GridLayout(9, 2));
@@ -34,6 +39,7 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
 
 
         panelIzqSup.add(l_Fe = new JLabel("    - Fe2O3: "));
+        l_Fe.setForeground(Color.WHITE);
         panelIzqSup.add(tf_Fe = new JTextField(8));
         panelIzqSup.add(l_Si = new JLabel("    - SiO2: "));
         panelIzqSup.add(tf_Si = new JTextField(8));
@@ -54,8 +60,8 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
 
 
         b_comprobar = new JButton("Comprobar");
-        b_comprobar.setSize(40,10);
-
+        b_comprobar.setSize(50,10);
+        b_comprobar.setBackground(Color.gray);
 
         panelIzqInf.add(b_comprobar);
 

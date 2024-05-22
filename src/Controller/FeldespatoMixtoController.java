@@ -1,70 +1,64 @@
 package Controller;
 
-import Model.Caolin;
-import Model.Dolomita;
+import Model.Feldespato;
+import Model.FeldespatoMixto;
 import Model.Material;
 
-public class DolomitaController {
+public class FeldespatoMixtoController {
     private int cont = 0;
-    private Dolomita dolomita = new Dolomita();
-    public boolean esDolomita (Material material){
+    private FeldespatoMixto feldespatoMixto = new FeldespatoMixto();
+    public boolean esFeldespatoMixto (Material material){
         comprobacionFe(material);
         comprobacionAl(material);
         comprobacionCa(material);
         comprobacionSi(material);
         comprobacionTi(material);
-        comprobacionK(material);
         comprobacionMg(material);
-        comprobacionNa(material);
+        comprobacionNaK(material);
         comprobacionPPC(material);
-        if (cont==9){
+        if (cont==8){
             return true;
         }else {
             return false;
         }
     }
     public void comprobacionFe(Material material) {
-        if (material.getFe()<=dolomita.getMaxFe()){
+        if (material.getFe()<feldespatoMixto.getMaxFe() && material.getFe()>feldespatoMixto.getMinFe()){
             cont++;
         }
     }
     public void comprobacionSi(Material material) {
-        if (material.getSi()<dolomita.getMaxSi()){
+        if (material.getSi()<feldespatoMixto.getMaxSi() && material.getSi()>feldespatoMixto.getMinSi()){
             cont++;
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<dolomita.getMaxAl()){
+        if (material.getAl()<feldespatoMixto.getMaxAl() && material.getSi()>feldespatoMixto.getMinAl()){
             cont++;
         }
     }
     public void comprobacionTi(Material material) {
-        if (material.getTi()<dolomita.getMaxTi()){
+        if (material.getTi()<feldespatoMixto.getMaxTi()){
             cont++;
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getCa()>dolomita.getMinCa()){
+        if (material.getCa()<feldespatoMixto.getMaxCa()){
             cont++;
         }
     }
     public void comprobacionMg(Material material) {
-        if (material.getMg()>dolomita.getMinMg()){
+        if (material.getMg()<feldespatoMixto.getMaxMg()){
             cont++;
         }
     }
-    public void comprobacionK(Material material) {
-        if (material.getK()<dolomita.getMaxK()){
-            cont++;
-        }
-    }
-    public void comprobacionNa(Material material) {
-        if (material.getNa()<dolomita.getMaxNa()){
+    public void comprobacionNaK(Material material) {
+        if (material.getNa()+material.getK()>feldespatoMixto.getSumaNaK()){
             cont++;
         }
     }
     public void comprobacionPPC(Material material) {
-        if (material.getPpc()>dolomita.getMinPPC()){
+        if (material.getPpc()<feldespatoMixto.getMaxPPC() && material.getSi()>feldespatoMixto.getMinPPC()){
             cont++;
         }
     }

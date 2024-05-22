@@ -1,13 +1,13 @@
 package Controller;
 
-import Model.Caolin;
-import Model.CarbonatoCalcico;
+import Model.Feldespato;
+import Model.FeldespatoSodico;
 import Model.Material;
 
-public class CarbonatoCalcicoController {
+public class FeldespatoSodicoController {
     private int cont = 0;
-    private CarbonatoCalcico carbonatoCalcico = new CarbonatoCalcico();
-    public boolean esCarbonatoCalcico (Material material){
+    private FeldespatoSodico feldespatoSodico = new FeldespatoSodico();
+    public boolean esFeldespatoSodico(Material material){
         comprobacionFe(material);
         comprobacionAl(material);
         comprobacionCa(material);
@@ -24,47 +24,47 @@ public class CarbonatoCalcicoController {
         }
     }
     public void comprobacionFe(Material material) {
-        if (material.getFe()<=carbonatoCalcico.getMaxFe()){
+        if (material.getFe()<feldespatoSodico.getMaxFe() && material.getFe()>feldespatoSodico.getMinFe()){
             cont++;
         }
     }
     public void comprobacionSi(Material material) {
-        if (material.getSi()<carbonatoCalcico.getMaxSi() && material.getSi()>carbonatoCalcico.getMinSi()){
+        if (material.getSi()<feldespatoSodico.getMaxSi() && material.getSi()>feldespatoSodico.getMinSi()){
             cont++;
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<carbonatoCalcico.getMaxAl()){
+        if (material.getAl()<feldespatoSodico.getMaxAl() && material.getSi()>feldespatoSodico.getMinAl()){
             cont++;
         }
     }
     public void comprobacionTi(Material material) {
-        if (material.getTi()<carbonatoCalcico.getMaxTi()){
+        if (material.getTi()<feldespatoSodico.getMaxTi()){
             cont++;
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getCa()<carbonatoCalcico.getMaxCa() && material.getCa()>carbonatoCalcico.getMinCa()){
+        if (material.getCa()<feldespatoSodico.getMaxCa()){
             cont++;
         }
     }
     public void comprobacionMg(Material material) {
-        if (material.getMg()<carbonatoCalcico.getMaxMg()){
+        if (material.getMg()<feldespatoSodico.getMaxMg()){
             cont++;
         }
     }
     public void comprobacionK(Material material) {
-        if (material.getK()<carbonatoCalcico.getMaxK()){
+        if (material.getK()<feldespatoSodico.getMaxK() && material.getSi()>feldespatoSodico.getMinK()){
             cont++;
         }
     }
     public void comprobacionNa(Material material) {
-        if (material.getNa()<carbonatoCalcico.getMaxNa()){
+        if (material.getSi()>feldespatoSodico.getMinNa()){
             cont++;
         }
     }
     public void comprobacionPPC(Material material) {
-        if (material.getPpc()<carbonatoCalcico.getMaxPPC() && material.getPpc()>carbonatoCalcico.getMinPPC()){
+        if (material.getPpc()<feldespatoSodico.getMaxPPC() && material.getSi()>feldespatoSodico.getMinPPC()){
             cont++;
         }
     }

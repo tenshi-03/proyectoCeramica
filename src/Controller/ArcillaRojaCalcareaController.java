@@ -1,13 +1,13 @@
 package Controller;
 
-import Model.Caolin;
-import Model.CarbonatoCalcico;
+import Model.ArcillaBlanca;
+import Model.ArcillaRojaCalcarea;
 import Model.Material;
 
-public class CarbonatoCalcicoController {
+public class ArcillaRojaCalcareaController {
     private int cont = 0;
-    private CarbonatoCalcico carbonatoCalcico = new CarbonatoCalcico();
-    public boolean esCarbonatoCalcico (Material material){
+    private ArcillaRojaCalcarea arcillaRojaCalcarea = new ArcillaRojaCalcarea();
+    public boolean esArcillaRojaCalcarea (Material material){
         comprobacionFe(material);
         comprobacionAl(material);
         comprobacionCa(material);
@@ -24,47 +24,47 @@ public class CarbonatoCalcicoController {
         }
     }
     public void comprobacionFe(Material material) {
-        if (material.getFe()<=carbonatoCalcico.getMaxFe()){
+        if (material.getFe()<arcillaRojaCalcarea.getMaxFe() && material.getFe()>arcillaRojaCalcarea.getMinFe()){
             cont++;
         }
     }
     public void comprobacionSi(Material material) {
-        if (material.getSi()<carbonatoCalcico.getMaxSi() && material.getSi()>carbonatoCalcico.getMinSi()){
+        if (material.getSi()<arcillaRojaCalcarea.getMaxSi() && material.getSi()>arcillaRojaCalcarea.getMinSi()){
             cont++;
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<carbonatoCalcico.getMaxAl()){
+        if (material.getAl()<arcillaRojaCalcarea.getMaxAl() && material.getAl()>arcillaRojaCalcarea.getMinAl()){
             cont++;
         }
     }
     public void comprobacionTi(Material material) {
-        if (material.getTi()<carbonatoCalcico.getMaxTi()){
+        if (material.getTi()<arcillaRojaCalcarea.getMaxTi()){
             cont++;
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getCa()<carbonatoCalcico.getMaxCa() && material.getCa()>carbonatoCalcico.getMinCa()){
+        if (material.getCa()<arcillaRojaCalcarea.getMaxCa() && material.getTi()>arcillaRojaCalcarea.getMinCa()){
             cont++;
         }
     }
     public void comprobacionMg(Material material) {
-        if (material.getMg()<carbonatoCalcico.getMaxMg()){
+        if (material.getMg()<arcillaRojaCalcarea.getMaxMg() && material.getTi()>arcillaRojaCalcarea.getMinMg()){
             cont++;
         }
     }
     public void comprobacionK(Material material) {
-        if (material.getK()<carbonatoCalcico.getMaxK()){
+        if (material.getK()<arcillaRojaCalcarea.getMaxK() && material.getK()>arcillaRojaCalcarea.getMinK()){
             cont++;
         }
     }
     public void comprobacionNa(Material material) {
-        if (material.getNa()<carbonatoCalcico.getMaxNa()){
+        if (material.getNa()<arcillaRojaCalcarea.getMaxNa() && material.getNa()>arcillaRojaCalcarea.getMinNa()){
             cont++;
         }
     }
     public void comprobacionPPC(Material material) {
-        if (material.getPpc()<carbonatoCalcico.getMaxPPC() && material.getPpc()>carbonatoCalcico.getMinPPC()){
+        if (material.getPpc()<arcillaRojaCalcarea.getMaxPPC() && material.getPpc()>arcillaRojaCalcarea.getMinPPC()){
             cont++;
         }
     }

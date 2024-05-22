@@ -1,9 +1,12 @@
 package Visual;
 
+import Controller.MainController;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Array;
 
 public class PantallaPrincipal extends JFrame implements ActionListener {
 
@@ -87,6 +90,8 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
-
+        JTextField[] materiales= {tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC};
+        MainController.BotonPresionado(materiales);
+        //El resultado se añade al panel de results
     }
 }

@@ -14,7 +14,8 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
     JTextField tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC;
     JButton b_comprobar;
     JTextArea ta_resultados;
-    JPanel panelIzq, panelIzqSup, panelIzqInf, panelDer;
+    JPanel panelIzq, panelIzqSup, panelIzqInf;
+    public JPanel panelDer;
     private Color colorFondo = new Color(31,29,59);
     private Color colorBoton = new Color(59, 65, 245);
 

@@ -91,7 +91,7 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         JTextField[] materiales= {tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC};
-        MainController.BotonPresionado(materiales);
+        MainController.BotonPresionado(materiales,ta_resultados);
         //El resultado se añade al panel de results
     }
 }

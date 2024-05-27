@@ -87,6 +87,8 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
         PantallaPrincipal miPantalla=new PantallaPrincipal();
         miPantalla.setVisible(true);
 
+
+
     }
 
     @Override

@@ -49,18 +49,7 @@ public class VentanaAviso extends JFrame {
 
         // Añade el panel principal a la ventana
         add(panel);
+        this.setVisible(true);
     }
-    public static void main(String[] args) {
-        // Ejecuta la creación de la ventana en el hilo de despacho de eventos de Swing
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                // Crea una instancia de la ventana de aviso con un mensaje
-                VentanaAviso aviso = new VentanaAviso("Este es un mensaje de aviso.");
 
-                // Hace visible la ventana
-                aviso.setVisible(true);
-            }
-        });
-    }
 }

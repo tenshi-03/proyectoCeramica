@@ -3,6 +3,7 @@ package Controller;
 import Model.Dolomita;
 import Model.Material;
 import Visual.PantallaPrincipal;
+import Visual.VentanaAviso;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,7 +29,6 @@ public class MainController {
                 }
             }
             if(mayoresQueCero){
-                System.out.println("Son todos mayores");
                 //Anidar métodos de comprobación de materiales
                 Material material=new Material(elementosDouble[0],elementosDouble[1],elementosDouble[2],elementosDouble[3],elementosDouble[4],elementosDouble[5]
                         ,elementosDouble[6],elementosDouble[7],elementosDouble[8]);
@@ -39,10 +39,12 @@ public class MainController {
 
             }
             else{
-                System.out.println("Hay uno menor");
+
+                VentanaAviso va_NoNumero = new VentanaAviso("Hay un valor no válido.");
             }
         }catch (Exception e){
-            System.out.println("no es un numero");
+
+            VentanaAviso va_NoNumero = new VentanaAviso("Hay un valor no válido.");
             //Pop Up de error hay un elemento que no es un número
         }
     }
@@ -90,6 +92,8 @@ public class MainController {
             resultado.setText("Magnesita");
         } else if (t.esTalco(material)) {
             resultado.setText("Talco");
+        }else{
+            resultado.setText("Material desconocido.");
         }
     }
 }

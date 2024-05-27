@@ -34,7 +34,7 @@ public class FeldespatoPotasicoController {
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<feldespatoPotasico.getMaxAl() && material.getSi()>feldespatoPotasico.getMinAl()){
+        if (material.getAl()<feldespatoPotasico.getMaxAl() && material.getAl()>feldespatoPotasico.getMinAl()){
             cont++;
         }
     }
@@ -59,12 +59,12 @@ public class FeldespatoPotasicoController {
         }
     }
     public void comprobacionNa(Material material) {
-        if (material.getNa()<feldespatoPotasico.getMaxNa() && material.getSi()>feldespatoPotasico.getMinNa()){
+        if (material.getNa()<feldespatoPotasico.getMaxNa() && material.getNa()>feldespatoPotasico.getMinNa()){
             cont++;
         }
     }
     public void comprobacionPPC(Material material) {
-        if (material.getPpc()<feldespatoPotasico.getMaxPPC() && material.getSi()>feldespatoPotasico.getMinPPC()){
+        if (material.getPpc()<feldespatoPotasico.getMaxPPC() && material.getPpc()>feldespatoPotasico.getMinPPC()){
             cont++;
         }
     }

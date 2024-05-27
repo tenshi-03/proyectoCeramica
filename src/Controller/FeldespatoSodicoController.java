@@ -34,7 +34,7 @@ public class FeldespatoSodicoController {
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<feldespatoSodico.getMaxAl() && material.getSi()>feldespatoSodico.getMinAl()){
+        if (material.getAl()<feldespatoSodico.getMaxAl() && material.getAl()>feldespatoSodico.getMinAl()){
             cont++;
         }
     }
@@ -54,7 +54,7 @@ public class FeldespatoSodicoController {
         }
     }
     public void comprobacionK(Material material) {
-        if (material.getK()<feldespatoSodico.getMaxK() && material.getSi()>feldespatoSodico.getMinK()){
+        if (material.getK()<feldespatoSodico.getMaxK() && material.getK()>feldespatoSodico.getMinK()){
             cont++;
         }
     }
@@ -64,7 +64,7 @@ public class FeldespatoSodicoController {
         }
     }
     public void comprobacionPPC(Material material) {
-        if (material.getPpc()<feldespatoSodico.getMaxPPC() && material.getSi()>feldespatoSodico.getMinPPC()){
+        if (material.getPpc()<feldespatoSodico.getMaxPPC() && material.getPpc()>feldespatoSodico.getMinPPC()){
             cont++;
         }
     }

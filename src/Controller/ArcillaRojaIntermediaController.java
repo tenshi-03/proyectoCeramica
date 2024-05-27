@@ -44,12 +44,12 @@ public class ArcillaRojaIntermediaController {
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getCa()<arcillaRojaIntermedia.getMaxCa() && material.getTi()>arcillaRojaIntermedia.getMinCa()){
+        if (material.getCa()<arcillaRojaIntermedia.getMaxCa() && material.getCa()>arcillaRojaIntermedia.getMinCa()){
             cont++;
         }
     }
     public void comprobacionMg(Material material) {
-        if (material.getMg()<arcillaRojaIntermedia.getMaxMg() && material.getTi()>arcillaRojaIntermedia.getMinMg()){
+        if (material.getMg()<arcillaRojaIntermedia.getMaxMg() && material.getMg()>arcillaRojaIntermedia.getMinMg()){
             cont++;
         }
     }

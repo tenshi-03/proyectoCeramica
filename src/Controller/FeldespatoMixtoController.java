@@ -33,7 +33,7 @@ public class FeldespatoMixtoController {
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<feldespatoMixto.getMaxAl() && material.getSi()>feldespatoMixto.getMinAl()){
+        if (material.getAl()<feldespatoMixto.getMaxAl() && material.getAl()>feldespatoMixto.getMinAl()){
             cont++;
         }
     }

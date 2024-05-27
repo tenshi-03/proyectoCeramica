@@ -44,12 +44,12 @@ public class TalcoController {
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getCa()<talco.getMaxCa() && material.getTi()>talco.getMinCa()){
+        if (material.getCa()<talco.getMaxCa() && material.getCa()>talco.getMinCa()){
             cont++;
         }
     }
     public void comprobacionMg(Material material) {
-        if (material.getMg()<talco.getMaxMg() && material.getTi()>talco.getMinMg()){
+        if (material.getMg()<talco.getMaxMg() && material.getMg()>talco.getMinMg()){
             cont++;
         }
     }

@@ -34,7 +34,7 @@ public class FeldespatoController {
         }
     }
     public void comprobacionAl(Material material) {
-        if (material.getAl()<feldespato.getMaxAl() && material.getSi()>feldespato.getMinAl()){
+        if (material.getAl()<feldespato.getMaxAl() && material.getAl()>feldespato.getMinAl()){
             cont++;
         }
     }
@@ -54,17 +54,17 @@ public class FeldespatoController {
         }
     }
     public void comprobacionK(Material material) {
-        if (material.getK()<feldespato.getMaxK() && material.getSi()>feldespato.getMinK()){
+        if (material.getK()<feldespato.getMaxK() && material.getK()>feldespato.getMinK()){
             cont++;
         }
     }
     public void comprobacionNa(Material material) {
-        if (material.getNa()<feldespato.getMaxNa() && material.getSi()>feldespato.getMinNa()){
+        if (material.getNa()<feldespato.getMaxNa() && material.getNa()>feldespato.getMinNa()){
             cont++;
         }
     }
     public void comprobacionPPC(Material material) {
-        if (material.getPpc()<feldespato.getMaxPPC() && material.getSi()>feldespato.getMinPPC()){
+        if (material.getPpc()<feldespato.getMaxPPC() && material.getPpc()>feldespato.getMinPPC()){
             cont++;
         }
     }

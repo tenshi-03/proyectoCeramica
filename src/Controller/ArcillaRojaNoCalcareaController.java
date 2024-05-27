@@ -44,12 +44,12 @@ public class ArcillaRojaNoCalcareaController {
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getCa()<arcillaRojaNoCalcarea.getMaxCa() && material.getTi()>arcillaRojaNoCalcarea.getMinCa()){
+        if (material.getCa()<arcillaRojaNoCalcarea.getMaxCa() && material.getCa()>arcillaRojaNoCalcarea.getMinCa()){
             cont++;
         }
     }
     public void comprobacionMg(Material material) {
-        if (material.getMg()<arcillaRojaNoCalcarea.getMaxMg() && material.getTi()>arcillaRojaNoCalcarea.getMinMg()){
+        if (material.getMg()<arcillaRojaNoCalcarea.getMaxMg() && material.getMg()>arcillaRojaNoCalcarea.getMinMg()){
             cont++;
         }
     }

@@ -44,7 +44,7 @@ public class MagnesitaController {
         }
     }
     public void comprobacionCa(Material material) {
-        if (material.getAl()<magnesita.getMaxCa() && material.getCa()>magnesita.getMinCa()){
+        if (material.getCa()<magnesita.getMaxCa() && material.getCa()>magnesita.getMinCa()){
             cont++;
         }
     }

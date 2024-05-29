@@ -18,7 +18,7 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
     JPanel panelIzq, panelIzqSup, panelIzqInf;
     public JPanel panelDer;
     private Color colorFondo = new Color(31,29,59);
-    private Color colorBoton = new Color(59, 65, 245);
+    private Color colorBoton = new Color(59, 65, 245, 255);
 
     public PantallaPrincipal(){
         setLayout(new GridLayout(1,2));

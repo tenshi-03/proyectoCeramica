@@ -15,17 +15,17 @@ public class MainController {
     public static void BotonPresionado(JTextField[] elementos,JLabel resultado){
         boolean mayoresQueCero=true;
         Double[] elementosDouble = new Double[elementos.length];
-        int i = 0;
-        try{
-            for (i=0;i<elementos.length;i++){
-                elementosDouble[i]= Double.parseDouble(String.valueOf(elementos[i].getText()));
-            }
-            for(i=0;i<elementosDouble.length;i++){
-                if(elementosDouble[i]<0 || elementosDouble[i].isNaN()){
+            for(int i= 0;i<elementosDouble.length;i++){
+                if(!esNumero(elementos[i].getText())){
+                    mayoresQueCero=false;
+                    elementos[i].setBackground(new Color(255, 186, 186));
+                }
+                else if(Integer.valueOf(elementos[i].getText())<0){
                     mayoresQueCero=false;
                     elementos[i].setBackground(new Color(255, 186, 186));
                 }
                 else{
+                    elementosDouble[i]= parseDouble(String.valueOf(elementos[i].getText()));
                     elementos[i].setBackground(new Color(255, 255, 255));
                 }
             }
@@ -42,12 +42,17 @@ public class MainController {
             else{
                 VentanaAviso va_NoNumero = new VentanaAviso("Hay un valor no válido.");
             }
+        }
+
+    public static boolean esNumero(String dato){
+        try{
+            Integer.valueOf(dato);
+            return true;
         }catch (Exception e){
-            elementos[i].setBackground(new Color(255, 186, 186));
-            VentanaAviso va_NoNumero = new VentanaAviso("Hay un valor no válido.");
-            //Pop Up de error hay un elemento que no es un número
+            return false;
         }
     }
+
     public static void comprobacionMaterial(Material material,JLabel resultado){
         ArcillaBlancaController abc = new ArcillaBlancaController();
         ArcillaRojaCalcareaController arc = new ArcillaRojaCalcareaController();

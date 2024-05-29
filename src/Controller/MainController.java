@@ -15,11 +15,12 @@ public class MainController {
     public static void BotonPresionado(JTextField[] elementos,JLabel resultado){
         boolean mayoresQueCero=true;
         Double[] elementosDouble = new Double[elementos.length];
+        int i = 0;
         try{
-            for (int i=0;i<elementos.length;i++){
+            for (i=0;i<elementos.length;i++){
                 elementosDouble[i]= Double.parseDouble(String.valueOf(elementos[i].getText()));
             }
-            for(int i=0;i<elementosDouble.length;i++){
+            for(i=0;i<elementosDouble.length;i++){
                 if(elementosDouble[i]<0 || elementosDouble[i].isNaN()){
                     mayoresQueCero=false;
                     elementos[i].setBackground(new Color(255, 186, 186));
@@ -39,11 +40,10 @@ public class MainController {
 
             }
             else{
-
                 VentanaAviso va_NoNumero = new VentanaAviso("Hay un valor no válido.");
             }
         }catch (Exception e){
-
+            elementos[i].setBackground(new Color(255, 186, 186));
             VentanaAviso va_NoNumero = new VentanaAviso("Hay un valor no válido.");
             //Pop Up de error hay un elemento que no es un número
         }

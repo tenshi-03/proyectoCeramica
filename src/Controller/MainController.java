@@ -12,7 +12,7 @@ import java.util.Arrays;
 import static java.lang.Double.parseDouble;
 
 public class MainController {
-    public static void BotonPresionado(JTextField[] elementos,JTextArea resultado){
+    public static void BotonPresionado(JTextField[] elementos,JLabel resultado){
         boolean mayoresQueCero=true;
         Double[] elementosDouble = new Double[elementos.length];
         try{
@@ -48,7 +48,7 @@ public class MainController {
             //Pop Up de error hay un elemento que no es un número
         }
     }
-    public static void comprobacionMaterial(Material material,JTextArea resultado){
+    public static void comprobacionMaterial(Material material,JLabel resultado){
         ArcillaBlancaController abc = new ArcillaBlancaController();
         ArcillaRojaCalcareaController arc = new ArcillaRojaCalcareaController();
         ArcillaRojaIntermediaController ari = new ArcillaRojaIntermediaController();

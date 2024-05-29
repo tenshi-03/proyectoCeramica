@@ -13,7 +13,8 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
     JLabel l_Fe, l_Si, l_Al, l_Mg, l_Na, l_K, l_Ti, l_Ca, l_PPC;
     JTextField tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC;
     JButton b_comprobar;
-    JTextArea ta_resultados;
+    JLabel lbl_resultado;
+    JLabel ta_resultados;
     JPanel panelIzq, panelIzqSup, panelIzqInf;
     public JPanel panelDer;
     private Color colorFondo = new Color(31,29,59);
@@ -69,10 +70,10 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
 
         panelIzqInf.add(b_comprobar);
 
-        ta_resultados = new JTextArea("Resultados:");
+        ta_resultados = new JLabel();
 
         //ta_resultados.setFont(Fo);
-        ta_resultados.setEditable(false);
+        panelDer.add(lbl_resultado = new JLabel("Resultado:"));
         panelDer.add(ta_resultados);
 
         panelIzq.add(panelIzqSup);

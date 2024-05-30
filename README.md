@@ -18,6 +18,7 @@ Deberás introducir el porcentaje de cada uno de los compuestos de tu material p
 -Feldespato potásico
 -Feldespato mixto
 
-Tras introudcirlos, deberás presionar el botón "Enviar".
+Tras introuducirlos, deberás presionar el botón "Enviar".
+
 En caso de que los porcentajes de los compuestos introducidos no coincidan con ninguno de los anteriores compuestos, en la zona derecha de la pantalla se mostrará el mensaje: "Material desconocido". En caso de que coincida, se mostrará el nombre del material coincidente.
 Si se introducen valores inválidos, se resaltarán las casillas en las que se han introducido dichos valores y saltará una ventana de aviso.

@@ -6,7 +6,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
 
 public class PantallaPrincipal extends JFrame implements ActionListener {
 
@@ -88,20 +87,24 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
         add(panelDer);
 
         b_comprobar.addActionListener(this);
+        b_limpiar.addActionListener(this);
 
     }
     public static void main(String[] args) {
         PantallaPrincipal miPantalla=new PantallaPrincipal();
         miPantalla.setVisible(true);
-
-
-
     }
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
+        Object source= actionEvent.getSource();
         JTextField[] materiales= {tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC};
-        MainController.BotonPresionado(materiales,ta_resultados);
+        if (source==b_comprobar){
+            MainController.ComprobarPresionado(materiales,ta_resultados);
+        }
+        else{
+            MainController.LimpiarPresionado(materiales);
+        }
         //El resultado se añade al panel de results
     }
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="proyectoCeramica:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/proyectoCeramica_jar</output-path>
+    <root id="archive" name="proyectoCeramica.jar">
+      <element id="module-output" name="proyectoCeramica" />
+    </root>
+  </artifact>
+</component>

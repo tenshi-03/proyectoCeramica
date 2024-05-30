@@ -12,7 +12,7 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
 
     JLabel l_Fe, l_Si, l_Al, l_Mg, l_Na, l_K, l_Ti, l_Ca, l_PPC;
     JTextField tf_Fe, tf_Si, tf_Al, tf_Mg, tf_Na, tf_K, tf_Ti, tf_Ca, tf_PPC;
-    JButton b_comprobar;
+    JButton b_comprobar,b_limpiar;
     JLabel lbl_resultado;
     JLabel ta_resultados;
     JPanel panelIzq, panelIzqSup, panelIzqInf;
@@ -68,7 +68,13 @@ public class PantallaPrincipal extends JFrame implements ActionListener {
         b_comprobar.setForeground(Color.white);
         b_comprobar.setBackground(colorBoton);
 
+        b_limpiar = new JButton("Limpiar");
+        b_limpiar.setSize(50,10);
+        b_limpiar.setForeground(Color.white);
+        b_limpiar.setBackground(colorBoton);
+
         panelIzqInf.add(b_comprobar);
+        panelIzqInf.add(b_limpiar);
 
         ta_resultados = new JLabel();
 
